@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th = "http://www.thymeleaf.org/">
+<head>
+    <meta charset="UTF-8" />
+    <title>Welcome To Your Spa User Account!</title>
+    <link href="../static/css/styles.css" th:href="@{/css/styles.css}" rel="stylesheet" />
+</head>
+<body>
+<h1 th:text='${"Welcome to your new spa account, " + user.username + "!"}'></h1>
+
+<h3>Please click <a th:href="@{/}">here</a> to choose your spa service!</h3>
+</body>
+</html>
